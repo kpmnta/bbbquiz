@@ -4,25 +4,99 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://s2.glbimg.com/YpBu5-jVSau_ufvDIM2ONFSmw1M=/0x0:719x620/690x0/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2017/W/u/eeP1hCSXClpqjSGXATjw/bbb17-prova-batedeira.gif",
+        "title": "Quem foram os protagonistas da prova de resistencia mais longa do BBB?",
+        "description": "Essa é fácil hein",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Diego Alemão e Alberto Caubói no BBB6",
+          "Ana Clara e Kaysar no BBB18",
+          "Emily e Romulo no BBB17",
+          "Kelly e Jakeline no BBB12"
+        ]
+      },
+      {
+        "image": "https://tv.i.uol.com.br/televisao/especiais/bbb/2011/01/27/candidatos-ao-bbb-9-ficaram-confinados-na-bolha-ate-o-dia-do-primeiro-paredao-2012009-1296139028228_615x300.jpg",
+        "title": "Em que ano tivemos duas edições do BBB?",
+        "description": "Pra quem assiste faz tempo",
+        "answer": 3,
+        "alternatives": [
+          "2006",
+          "2010",
+          "2002",
+          "2000"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/8wdhVLHX9Sxb9NIwE8f7J5s6Bjs=/0x0:719x405/690x0/s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/photos/apis/693b76c5975e400f874adc8c0a43160a/barraco-gif.gif",
+        "title": "Quem saiu do programa com o maior recorde de rejeição?",
+        "description": "Eu sei que vc votou",
+        "answer": 1,
+        "alternatives": [
+           "A Aline, no BBB5",
+           "A Patricia, no BBB18",
+           "O Victor Hugo, no BBB20", 
+           "A Nayara, no BBB18"
         ]
       },
       {
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "title": "Quantas Casas de Vidros já tivemos no BBB?",
+        "description": "A atração menos hypada do role",
+        "answer": 4,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Três",
+           "Dez",
+           "Seis", 
+           "Quatro"
+        ]
+      },
+      {
+        "image": "https://24.media.tumblr.com/cdb0947b5c23773bf0f8631e3342cdcd/tumblr_mjvsrzJAML1r1rcz2o2_250.gif",
+        "title": "A partir de que ano o prêmio passou a ser 1,5 milhão de reais?",
+        "description": "Dá pra comprar muito leite condensado",
+        "answer": 3,
+        "alternatives": [
+           "2005",
+           "2015",
+           "2010", 
+           "2020"
+        ]
+      },
+      {
+        "image": "https://media1.tenor.com/images/5b2dfe7730226793d97ede0ff52c9209/tenor.gif?itemid=16136559",
+        "title": "Quantas vezes o Babu foi pro paredão no BBB20?",
+        "description": "Ele bateu o recorde dos BBBs",
+        "answer": 2,
+        "alternatives": [
+           "8",
+           "10",
+           "11", 
+           "9"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/8l54aSyqwrPj4U5PIpkDl5N5Y5w=/0x0:2635x1704/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/C/h/zpQFIoSCi6FIL6IAjPdQ/bbb-guiness-world-records-2021-recorde-.jpg",
+        "title": "O BBB20 bateu recorde de votos recebendo quantos votos em unico paredão?",
+        "description": "nossos votos foram parar no guiness book",
+        "answer": 1,
+        "alternatives": [
+           "1,5 bilhão de votos",
+           "1 bilhão de votos",
+           "2 bilhões de votos", 
+           "2,5 bilhões de votos"
+        ]
+      },
+      {
+        "image": "https://miro.medium.com/max/4000/1*fDudMWAbm4_h3HfdDBDqsw.gif",
+        "title": "Além do Pedro Bial e Tiago Leifert, o BBB já teve mais uma apresentadora, quem?",
+        "description": "Será que o Gil gostava dela?",
+        "answer": 4,
+        "alternatives": [
+           "Gloria Maria",
+           "Cissa Guimarães",
+           "Fernanda Torres", 
+           "Marisa Orth"
         ]
       }
     ],
