@@ -5,11 +5,11 @@ const AlternativesForm = styled.form `
         &[data-selected="true"] {
             background-color: ${({ theme }) => theme.colors.primary};
 
-            &[data-selected="SUCCESS"] {
-                background-color: ${({ theme }) => theme.colors.sucess};   
+            &[data-status="SUCCESS"] {
+                background-color: ${({ theme }) => theme.colors.success};   
             }
 
-            &[data-selected="ERROR"] {
+            &[data-status="ERROR"] {
                 background-color: ${({ theme }) => theme.colors.wrong};
             }
         }
