@@ -1,10 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 import db from '../db.json';
 import QuizContainer from '../src/components/QuizContainer';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
-import styled from 'styled-components';
+import AlternativesForm from '../src/components/AlternativesForm';
 import Button from '../src/components/Button';
 
 function ResultWidget({ results }) {
@@ -74,7 +75,7 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
             <Widget.Content>
                 <h2>{ question.title }</h2>
                 <p>{ question.description }</p>
-                <form onSubmit={(event) =>{
+                <AlternativesForm onSubmit={(event) =>{
                     event.preventDefault();
                     setIsQuestionSubmitted(true);
                     setTimeout(() => {
@@ -87,11 +88,15 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
                 >
                     {question.alternatives.map((alternative, alternativeIndex) => {
                         const alternativeId = `alternative__${alternativeIndex}`;
+                        const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
+                        const isSelected = selectedAlternative === alternativeIndex;
                         return (
                             <Widget.Topic 
                                 as="label"
                                 key={ alternativeId }
                                 htmlFor={ alternativeId }
+                                data-selected={ isSelected }
+                                data-status={ isQuestionSubmitted && alternativeStatus }
                             >
                                 <input 
                                     style={{ display: 'none'}}
@@ -107,7 +112,7 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
                     <Button type="submit" disabled={ !hasAlternativeSelected }>Confirmar</Button>
                     {isQuestionSubmitted && isCorrect && <p>Você acertou!</p>}
                     {isQuestionSubmitted && !isCorrect && <p>Você errou!</p>}
-                </form>
+                </AlternativesForm>
             </Widget.Content>    
         </Widget>
     );    
