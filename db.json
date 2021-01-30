@@ -101,8 +101,8 @@
       }
     ],
     "external": [
-      "https://aluraquizpokemon.cesarrobertopg.vercel.app/",
-      "https://bbbquiz.kpmnta.vercel.app/",
+      "https://aleatorio-quiz.viniciud.vercel.app/",
+      "https://doctor-who-quiz.emanuelpna.vercel.app/",
       "https://alura-quiz-imersao-react.luizaacampos.vercel.app/"
     ],
     "theme": {
