@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import db from '../../db.json';
 import QuizContainer from '../../src/components/QuizContainer';
 import QuizBackground from '../../src/components/QuizBackground';
@@ -8,38 +7,14 @@ import Widget from '../../src/components/Widget';
 import AlternativesForm from '../../src/components/AlternativesForm';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
 import Button from '../../src/components/Button';
-
-function ResultWidget({ results }) {
-    return(
-        <Widget>
-            <Widget.Header>
-                Seu resultado
-            </Widget.Header>
-            <Widget.Content>
-                <p>Você acertou {' '}
-                    {results.filter((result) => result).length} perguntas</p>
-                <ul>
-                    { results.map((result, index) => (
-                        <li>
-                         #0{index + 1} Resultado:
-                         { result === true ? 'Acertou' : 'Errou'} 
-                         </li>
-                    )) }
-                </ul>
-            </Widget.Content>
-        </Widget>
-    );
-}
+import ResultWidget from '../../src/components/ResultWidget';
 
 function Loading() {
     return(
         <Widget>
             <Widget.Header>
-                Carregando...
+                Você está pronte?
             </Widget.Header>
-            <Widget.Content>
-                [Desafio do Loading]
-            </Widget.Content>
         </Widget>
     );
 }
@@ -97,7 +72,7 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
                                     id={ alternativeId }
                                     type="radio"
                                     name={ questionId }
-                                    onChange={() => setSelectedAlternative(alternativeIndex)}
+                                    onClick={() => setSelectedAlternative(alternativeIndex)}
                                 />
                                 {alternative}
                             </Widget.Topic>

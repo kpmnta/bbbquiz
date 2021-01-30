@@ -30,7 +30,7 @@ export default function Home() {
           <Widget.Content>
             <form onSubmit={(event) => {
               event.preventDefault();
-              router.push(`/quiz?name${name}`)
+              router.push(`/quiz?name=${name}`)
               console.log('fazendo submissão via react')
               }} 
             >

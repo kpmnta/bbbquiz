@@ -15,15 +15,7 @@ function ResultWidget({ results }) {
             </Widget.Header>
             <Widget.Content>
                 <p>Você acertou {' '}
-                    {/* {
-                    results.reduce((sumAtual, resAtual) => {
-                        const isAcerto = resAtual === true;
-                        if (isAcerto) {
-                            return sumAtual + 1;
-                        }
-                        return sumAtual
-                    }, 0 )}  */}
-                     {results.filter((result) => result).length} perguntas</p>
+                    {results.filter((result) => result).length} perguntas</p>
                 <ul>
                     { results.map((result, index) => (
                         <li>
@@ -41,11 +33,8 @@ function Loading() {
     return(
         <Widget>
             <Widget.Header>
-                Carregando...
+                Você está pronte?
             </Widget.Header>
-            <Widget.Content>
-                [Desafio do Loading]
-            </Widget.Content>
         </Widget>
     );
 }
@@ -102,7 +91,7 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
                                     id={ alternativeId }
                                     type="radio"
                                     name={ questionId }
-                                    onChange={() => setSelectedAlternative(alternativeIndex)}
+                                    onClick={() => setSelectedAlternative(alternativeIndex)}
                                 />
                                 {alternative}
                             </Widget.Topic>
