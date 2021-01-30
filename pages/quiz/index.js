@@ -52,7 +52,7 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
                         onSubmit();
                         setIsQuestionSubmitted(false);
                         setSelectedAlternative(undefined);
-                    },2 * 1000);
+                    },1 * 700);
                 }}
                 >
                     {question.alternatives.map((alternative, alternativeIndex) => {
